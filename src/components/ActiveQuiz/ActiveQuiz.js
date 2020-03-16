@@ -3,8 +3,6 @@ import classes from './ActiveQuiz.module.css'
 import AnswersList from "./AnswersList/AnswersList";
 
 export default (props) => {
-    console.log(props.state);
-
     return (
         <div className={classes.ActiveQuiz}>
             <p className={classes.Question}>
