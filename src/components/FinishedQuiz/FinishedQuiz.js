@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './FinishedQuiz.module.css'
 import Button from "../UI/Button/Button";
+import {Link} from "react-router-dom";
 
 export default (props) => {
     // let rightAnswers = 0;
@@ -46,12 +47,14 @@ export default (props) => {
             <p>Right {rightAnswers} out of {props.quiz.length}</p>
             <div>
                 <Button
-                    onClick={() => props.onRetry()}
-                    type = "primary"
+                    onClick={props.onRetry}
+                    type="primary"
                 >Retry</Button>
-                <Button
-                    type = "success"
-                >Go to the test list</Button>
+                <Link to="/">
+                    <Button
+                        type="success"
+                    >Go to the test list</Button>
+                </Link>
             </div>
         </div>
     )

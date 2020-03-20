@@ -8,7 +8,7 @@ export default (props) =>{
     ];
     return (
         <button
-            onClick={()=> props.onClick()}
+            onClick={props.onClick}
             className={cls.join(' ')}
             disabled={props.disabled}
         >
