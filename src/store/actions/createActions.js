@@ -19,5 +19,4 @@ export function finishCreateQuiz() {
         await axios.post('quizzes.json', getState().createReducer.quiz);
         dispatch(clearQuiz())
     }
-
 }

@@ -8,4 +8,6 @@ export const QUIZ_NEXT_QUESTION = 'QUIZ_NEXT_QUESTION';
 export const RETRY_QUIZ = 'RETRY_QUIZ';
 export const CREATE_QUIZ_QUESTION = 'CREATE_QUIZ_QUESTION';
 export const CLEAR_QUIZ = 'CLEAR_QUIZ';
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const AUTH_LOGOUT = 'AUTH_LOGOUT';
 
